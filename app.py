@@ -45,6 +45,10 @@ def ask_query():
 def labour():
     current_lang = session.get('lang', 'Default')
     return render_template('labour.html', current_lang=current_lang)
+@app.route('/login')
+def login():
+    current_lang = session.get('lang', 'Default')
+    return render_template('login.html', current_lang=current_lang)
 
 
 @app.get("/chat")

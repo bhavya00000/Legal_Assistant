@@ -169,7 +169,8 @@ body {
 /* Messages */
 .chatbox__messages {
     height: 700px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    padding-left: 5px;
 }
 
 .messages__item {

@@ -1,9 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .container {
     /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 450px;
-    width: 200vh;
+    width: max-width;
     
 }
 .heading {
@@ -61,14 +69,16 @@ a:hover{
 footer {
     background-color: #353333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px;
     text-align: center;
 }
 
 .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
-    height:100px;
+    margin: 0px;
+    height:30px;
+    text-align: center;
+    display:inline-table;
 }
 
 .footer-nav ul {
@@ -134,25 +144,34 @@ footer {
     }
 }
 .navbar {
-    background-color: #353333; /* Background color for the navbar */
+    background-color: #df7044; /* Background color for the navbar */
     color: #fff; /* Text color */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-     padding: 10px; 
+    padding: 0; 
     justify-content: end;
-   
+    font-family: sans-serif;
+    font-size: medium;
 }
+
+.navbar a:hover {
+    background-color: rgb(244, 143, 76);
+    color: white;
+    transform: scale(1.1);
+    padding: 10px;
+  } 
 
 /* Style for the navigation links */
 .navbar a {
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
-    margin-left: 90px;
-   
-    /* margin: 0 2px;Add spacing between links */
+    margin-left: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
 } 
 
 
@@ -178,7 +197,7 @@ footer {
 }
 
 .topnav {
-    background-color: #d3ccbd; /* Background color for the topnav */
+    background-color: #53899e; /* Background color for the topnav */
     color: #fff; /* Text color */
     display: flex;
     justify-content: space-between;
@@ -186,11 +205,12 @@ footer {
     padding: 10px;
 }
 
- .topnav a:hover {
-    background-color: black;
+.topnav a:hover {
+    background-color: rgb(12, 57, 82);
     color: white;
     transform: scale(1.1);
-  } 
+    padding: 10px;
+} 
   .top-content a {
     text-decoration: none;
     color: #fff;
@@ -198,10 +218,7 @@ footer {
     margin-right: 10px; /* Add spacing to separate links */
 }
 
-/* Style to remove margin-right for the last link (English) */
-.top-content a:last-child {
-    margin-right: 0;
-}
+
 .list ul {
     list-style-type: none;
     padding: 0;

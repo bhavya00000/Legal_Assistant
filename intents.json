@@ -35,8 +35,6 @@
     },
 
 
-
-
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],

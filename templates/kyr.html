@@ -15,7 +15,9 @@
   
         <div class="top-content">
             <a href="#">{{ gettext('Skip to main Content')}}</a>
+            <a>|</a>
             <a href="{{ url_for('set_language', lang='hi') }}">{{ gettext('Hindi')}}</a>
+            <a>|</a>
             <a href="{{ url_for('set_language', lang='en') }}">English</a>
         </div>
     </div>
@@ -36,7 +38,7 @@
         </table>
     </div>
     <div class="navbar">
-        <span class="user-icon">&#x1F464;</span>
+        <!-- <span class="user-icon">&#x1F464;</span> -->
         <a href="{{ url_for('home') }}">{{ gettext('Home')}}</a>
         <a href="#">{{ gettext('About_us')}}</a>
         <a href="#">{{ gettext('Contact')}}</a>       

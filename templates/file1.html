@@ -21,7 +21,7 @@
         </div>
   
         <div class="top-content">
-            <a href="#">{{ gettext('Skip to main Content')}}</a>
+            <a href="#box">{{ gettext('Skip to main Content')}}</a>
         
             <a href="{{ url_for('set_language', lang='hi') }}">Hindi</a>
         
@@ -49,7 +49,7 @@
         <a href="{{ url_for('home') }}">{{ gettext('Home')}}</a>
         <a href="#">{{ gettext('About_us')}}</a>
         <a href="#">{{ gettext('Contact')}}</a>
-        <a href="#">{{ gettext('Login')}}</a>
+        <a href="{{url_for('login')}}">{{ gettext('Login')}}</a>
         <a href="#">{{ gettext('Register')}}</a>
         <span class="user-icon">&#x1F464;</span>
     </div>
@@ -67,7 +67,7 @@
         <br>
         <br>
     </div>
-    <div class="box" onclick="window.location.href='{{ url_for('ask_query') }}'">
+    <div class="box" id="box" onclick="window.location.href='{{ url_for('ask_query') }}'">
         <div class="box-header">Know your Rights</div>
         <div class="box-content">
             <table>

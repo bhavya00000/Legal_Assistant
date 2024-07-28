@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 450px;
-    width: 200vh;
+    width: max-width;
     
 }
 
@@ -22,13 +22,13 @@ body {
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 440px;
-    
+    margin-left: 360px;
     /* padding-top: ; */
     margin-bottom: 20px;
 }
 .box:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .box-header {
     background-color: #333;
@@ -69,14 +69,16 @@ body {
 footer {
     background-color: #353333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px;
     text-align: center;
 }
 
 .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
-    height:100px;
+    margin: 0px;
+    height:30px;
+    text-align: center;
+    display:inline-table;
 }
 
 .footer-nav ul {
@@ -151,25 +153,34 @@ footer {
 }
 /* Style for the navigation bar */
 .navbar {
-    background-color: #353333; /* Background color for the navbar */
+    background-color: #df7044; /* Background color for the navbar */
     color: #fff; /* Text color */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-     padding: 10px; 
+    padding: 0; 
     justify-content: end;
-   
+    font-family: sans-serif;
+    font-size: medium;
 }
+
+.navbar a:hover {
+    background-color: rgb(244, 143, 76);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    padding: 10px;
+  } 
 
 /* Style for the navigation links */
 .navbar a {
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
-    margin-left: 90px;
-   
-    /* margin: 0 2px;Add spacing between links */
+    margin-left: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
 } 
 
 
@@ -203,7 +214,7 @@ footer {
  /* */ 
 /* Style for the top navigation bar */
 .topnav {
-    background-color: #d3ccbd; /* Background color for the topnav */
+    background-color: #53899e; /* Background color for the topnav */
     color: #fff; /* Text color */
     display: flex;
     justify-content: space-between;
@@ -222,9 +233,10 @@ footer {
 
 } */
  .topnav a:hover {
-    background-color: black;
+    background-color: rgb(12, 57, 82);
     color: white;
     transform: scale(1.1);
+    padding: 10px;
   } 
  
 .dropdown-link {
@@ -294,7 +306,7 @@ footer {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    margin-right: 10px; /* Add spacing to separate links */
+    margin-right: 44px; /* Add spacing to separate links */
 }
 
 /* Style to remove margin-right for the last link (English) */
@@ -333,8 +345,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
-   
+    z-index: 1000;   
     /* border: none; */
     /* border-radius: 50%; */
     padding: 10px;
@@ -347,10 +358,17 @@ footer {
     font-size: 16px;
 }
 
+.chatbox__button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: scale(1.1);
+    padding: 10px;
+  }
+
 .chatbox__button img {
-    width: 80px; /* Adjust the size of the chatbox icon */
-    height: 80px;
-    margin-right: 5px; /* Add some spacing between the icon and text */
+    width: 35px;
+    height: 35px;
+    margin-right: 1px;
 }
 .chatbox__button h3{
     color: rgb(213, 159, 240);
